@@ -1,0 +1,409 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem; }
+
+.text-center {
+  text-align: center; }
+
+.btn-main, .btn-light, .btn-dark {
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 1rem 2rem; }
+
+.btn-main {
+  background-color: crimson;
+  color: #333; }
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333; }
+
+.btn-dark {
+  background-color: #333;
+  color: #f4f4f4; }
+
+*[class^="btn-"]:hover {
+  background-color: crimson;
+  color: #f4f4f4; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.contact-form {
+  width: 100px; }
+  .contact-form .input-area {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "name email" "subject phone" "message message"; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.second-family {
+  font-family: "Anton", sans-serif; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/hero.jpg") no-repeat center top;
+  background-size: cover;
+  position: relative; }
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #f4f4f4; }
+    .header-content > h1 {
+      font-size: 2rem; }
+    .header-content > p {
+      margin: 1rem 0;
+      font-size: 1.2rem; }
+
+.nav {
+  width: 100%;
+  padding: 1rem 0; }
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .nav .logo {
+    color: white;
+    font-size: 2rem; }
+  .nav ul {
+    display: flex; }
+    .nav ul > li {
+      padding: 1rem; }
+      .nav ul > li > a {
+        color: white;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent; }
+        .nav ul > li > a:hover {
+          border-bottom: 2px solid #f4f4f4; }
+        .nav ul > li > a.current {
+          border-bottom: 2px solid crimson; }
+
+.skill-col {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+
+.skill-icon {
+  font-size: 50px; }
+  .skill-icon-js {
+    color: #e8c012; }
+  .skill-icon-react {
+    color: #0769ad; }
+  .skill-icon-vue {
+    color: #3ee426; }
+  .skill-icon-angular {
+    color: #dd1b16; }
+
+.skill-title {
+  margin: 1rem 0; }
+
+.skill-description {
+  line-height: 1.8rem; }
+
+.what-did {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem; }
+  .what-did > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    background-color: #f4f4f4; }
+    .what-did > div:nth-child(even) {
+      background-color: #ccc; }
+    .what-did > div > i {
+      font-size: 50px;
+      color: crimson; }
+    .what-did > div > p {
+      margin: 1rem 0;
+      font-size: 30px;
+      font-weight: bold; }
+    .what-did > div > span {
+      font-size: 30px;
+      font-weight: bold; }
+
+.section-title {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1.1rem 0; }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: crimson;
+    width: 50px;
+    height: 3px; }
+
+.box-wrapper {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr); }
+  .box-wrapper .box-job {
+    display: flex;
+    flex-direction: column; }
+    .box-wrapper .box-job-icon {
+      width: 120px;
+      height: 120px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      position: relative; }
+      .box-wrapper .box-job-icon i {
+        color: white;
+        font-size: 50px; }
+      .box-wrapper .box-job-icon span {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: crimson;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #f4f4f4;
+        transform: translate(-75%, -25%); }
+    .box-wrapper .box-job-title {
+      margin: 1rem 0; }
+    .box-wrapper .box-job-description {
+      line-height: 1.8rem; }
+
+.header-page {
+  height: auto;
+  border-bottom: 3px solid crimson; }
+
+.about-me {
+  display: flex;
+  margin-top: 1rem; }
+  .about-me-img {
+    width: 300px;
+    margin-right: 1rem; }
+  .about-me-content {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: left; }
+    .about-me-content p {
+      margin-top: 1rem; }
+
+.my-awards {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .my-awards i {
+    font-size: 40px;
+    color: crimson; }
+  .my-awards h3 {
+    margin: 1rem; }
+
+.my-skills-about {
+  background-color: #333;
+  color: #f4f4f4; }
+  .my-skills-about .progress {
+    margin-top: 1rem; }
+    .my-skills-about .progress h3 {
+      text-align: left;
+      font-size: 16px; }
+    .my-skills-about .progress-line {
+      background-color: #ccc;
+      height: 35px;
+      margin-top: 5px;
+      border-radius: 5px;
+      overflow: hidden; }
+    .my-skills-about .progress-inner {
+      background-color: crimson;
+      height: inherit; }
+      .my-skills-about .progress-inner-100 {
+        width: 100%; }
+      .my-skills-about .progress-inner-80 {
+        width: 80%; }
+      .my-skills-about .progress-inner-70 {
+        width: 70%; }
+
+.people-says-col {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem 0; }
+  .people-says-col .people-says-single p {
+    border: 1px solid #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: left; }
+  .people-says-col .people-says-single div {
+    display: flex;
+    align-items: center; }
+    .people-says-col .people-says-single div img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 1rem; }
+
+.work-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  .work-wrapper .any-work {
+    position: relative;
+    overflow: hidden; }
+    .work-wrapper .any-work img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s; }
+    .work-wrapper .any-work:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.contact-form {
+  width: 100%; }
+  .contact-form .input-area {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "name email" "subject phone" "message message"; }
+    .contact-form .input-area .input-filled {
+      padding: 0.5rem 1rem; }
+    .contact-form .input-area .message {
+      height: 200px;
+      resize: none;
+      padding: 0.5rem 1rem; }
+  .contact-form button[type="submit"] {
+    width: 50%;
+    border-radius: 0; }
+
+.input-name {
+  grid-area: name; }
+
+.input-email {
+  grid-area: email; }
+
+.input-subject {
+  grid-area: subject; }
+
+.input-phone {
+  grid-area: phone; }
+
+.input-message {
+  grid-area: message; }
+
+.contact-info {
+  width: 100%;
+  background-color: #333;
+  color: #f4f4f4;
+  border-bottom: 3px solid #f4f4f4; }
+  .contact-info .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; }
+    .contact-info .container div i {
+      font-size: 30px; }
+    .contact-info .container div h3 {
+      margin: 1.5rem; }
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0; }
+
+@media (max-width: 800px) {
+  .header {
+    height: 50vh; }
+    .header-page {
+      height: auto; }
+    .header .header-content {
+      margin-top: 2rem; }
+      .header .header-content h1 {
+        font-size: 1.5rem; }
+  .skill-col,
+  .what-did,
+  .box-wrapper,
+  .people-says-col,
+  .work-wrapper {
+    grid-template-columns: repeat(2, 1fr); }
+  .what-did div {
+    border-bottom: 1px solid #333; } }
+
+@media (max-width: 600px) {
+  .header .header-content h1 {
+    font-size: 1.2rem; }
+  .header .header-content .btn-light {
+    padding: 0.5rem;
+    font-size: 15px; }
+  .skill-col,
+  .what-did,
+  .box-wrapper,
+  .people-says-col,
+  .my-awards,
+  .work-wrapper,
+  .contact-info .container {
+    grid-template-columns: repeat(1, 1fr); }
+  .about-me-wrapper .about-me {
+    flex-direction: column; }
+    .about-me-wrapper .about-me img {
+      margin: 0 auto; }
+  .contact-form .input-area {
+    grid-template-areas: "name"  "email" "subject"  "phone" "message"; } }
